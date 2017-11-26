@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".small-form").click(function(){$("p").style.display("none")})});

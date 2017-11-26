@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88799757-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-88799757-2');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--css-->
+  <link rel="stylesheet" href="/css/style.css">
+  <!--jQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />  
+  <!--fonts load-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <title>Ryan Jordal Portfolio</title>
+</head>
+<body>
+  <div class="main">
+    <div class="core">
+      <p><span>Hi, I'm Ryan</span> and I create stuff on the web. You can see some my <a href="#">projects</a> below and on my <a href="https://codepen.io/rayjay00/">CodePen</a> and <a href="http://www.github.com/rayjay00">Github</a>. If you'd like to get in touch, you can email me at <a href="mailto:hello@ryanjordal.me?Subject=Hi%20Ryan" target="_top">hello@ryanjordal.me</a>.</p>
+    </div><!--core-->
+    <div class="projects">
+      <h1>Projects</h1>
+      <div class="project-wrap">
+        <div class="project">
+          <p>Weather App</p>
+          <!--Weather App Modal-->
+          <div id="weathermodal" class="modal">
+              <a href="http://weatherapp.ryanjordal.me"><img src="/img/weatherapp.png" alt="" height="250px" width="100%"></a>          
+              <p style="font-family: Libre Baskerville">This app fetches the user's current location and gives the city name, current temperature, and a short description of the current weather. I pulled the data from the OpenWeatherMap API and I used JavaScript to change the background image and icon based on the current weather. I'm currently working on a multiday forecast app using CSS Grid.</p>
+              <p style="font-family: Libre Baskerville;"><a  style="color: rgb(48, 146, 168)" href="http://weatherapp.ryanjordal.me">Link</a>//<a style="color: rgb(48, 146, 168)" href="https://github.com/rayjay00/Weather-App">Github</a></p>
+            </div>
+          <!-- -->
+          <a href="http://weatherapp.ryanjordal.me"><img src="/img/weatherapp.png" alt=""></a>
+          <p><a href="#weathermodal" rel="modal:open">About</a>//<a href="http://weatherapp.ryanjordal.me">Link</a>//<a href="https://github.com/rayjay00/Weather-App">Github</a></p>
+        </div>
+        <div class="project">
+          <p>Login Page With Password Checker</p>
+            <!--PW Login Modal-->
+            <div id="pwmodal" class="modal">
+              <a href="http://pwchecker.ryanjordal.me"><img src="/img/pwsite.png" alt="" height="220px" width="100%"></a>          
+              <p style="font-family: Libre Baskerville">This password strength tester uses the <a href="https://github.com/dropbox/zxcvbn">zxcvbn</a> API to check the strength of the password. The zxcvbn algorithm assigns a strength value of 0-4 to the password and updates the meter. All of the password-checking is done the user's end. I used JavaScript to check the password input field and to make the password checker only appear when there is an input and to display a qualitative value to the password. </p>
+              <p style="font-family: Libre Baskerville;"><a  style="color: rgb(48, 146, 168)" href="http://pwchecker.ryanjordal.me">Link</a>//<a style="color: rgb(48, 146, 168)" href="https://github.com/rayjay00/password-checker">Github</a></p>
+            </div>
+            <!-- -->
+            <a href="http://pwchecker.ryanjordal.me"><img src="/img/pwsite.png" alt=""></a>
+            <p><a href="#pwmodal" rel="modal:open">About</a>//<a href="http://pwchecker.ryanjordal.me">Link</a>//<a href="https://github.com/rayjay00/password-checker">Github</a></p>          
+        </div>
+        <div class="project">
+            <p>George Washington Timeline</p>
+              <!--Tribute Page Modal-->
+              <div id="tributemodal" class="modal">
+                <a href="http://tributepage.ryanjordal.me"><img src="/img/tribute.png" alt="" height="200px" width="100%"></a>          
+                <p style="font-family: Libre Baskerville">I wanted to create a dynamic timeline page that popped in when scrolling down. I started off by sketching out what I wanted it to look like on phones, tablets, and desktop viewports. Next, I found some cool George Washington photos and used Photoshop to optimize them for the most efficient asset delivery. I used jQuery to have it "pop in" on scroll. My favorite part is the tiny George Washington head at the center of each section.</p>
+                <p style="font-family: Libre Baskerville;"><a  style="color: rgb(48, 146, 168)" href="http://tributepage.ryanjordal.me">Link</a>//<a style="color: rgb(48, 146, 168)" href="https://github.com/rayjay00/Vertical-Timeline-Tribute">Github</a></p>
+              </div>
+              <!-- -->
+              <a href="http://tributepage.ryanjordal.me"><img src="/img/tribute.png" alt=""></a>
+              <p><a href="#tributemodal" rel="modal:open">About</a>//<a href="http://tributepage.ryanjordal.me">Link</a>//<a href="https://github.com/rayjay00/Vertical-Timeline-Tribute">Github</a></p>            
+        </div>
+        <div class="project">
+            <p>Restaurant Site</p>
+            <!--Restaurant Site Modal-->
+            <div id="burritomodal" class="modal">
+              <a href="http://burritoloco.ryanjordal.me"><img src="/img/locopage.png" alt="" height="200px" width="100%"></a>          
+              <p style="font-family: Libre Baskerville">I created this site for one of my favorite local restaurants. I used Bootstrap and compressed the images using Photoshop to help with page load speed. The most challenging part of this project was figuring out a way to have the dots between the menu items and prices scale up and down based on the size of the viewport.</p>
+              <p style="font-family: Libre Baskerville;"><a  style="color: rgb(48, 146, 168)" href="http://burritoloco.ryanjordal.me">Link</a>//<a style="color: rgb(48, 146, 168)" href="https://github.com/rayjay00/Restaurant-Site">Github</a></p>
+            </div>
+            <!-- -->
+            <a href="http://burritoloco.ryanjordal.me"><img src="/img/locopage.png" alt=""></a>
+            <p><a href="#burritomodal" rel="modal:open">About</a>//<a href="http://burritoloco.ryanjordal.me">Link</a>//<a href="https://github.com/rayjay00/Restaurant-Site">Github</a></p>            
+          </div>
+        <div class="project">
+            <p>Responsive Login Portal</p>
+            <!--Responsive Login Site Modal-->
+            <div id="loginmodal" class="modal">
+              <a href="http://loginpage.ryanjordal.me"><img src="/img/login.png" alt="" height="240px" width="100%"></a>          
+              <p style="font-family: Libre Baskerville">The purpose of this project is to learn more about the backend. I wanted to create a responsive login page that looked stylish and had two separate areas: one for registered users and a registration form. I'm currently adding the backend of this page using MySQL and PHP.</p>
+              <p style="font-family: Libre Baskerville;"><a  style="color: rgb(48, 146, 168)" href="http://loginpage.ryanjordal.me">Link</a>//<a style="color: rgb(48, 146, 168)" href="https://github.com/rayjay00/Login-Page">Github</a></p>
+            </div>
+            <!-- -->
+            <img src="/img/login.png" alt="">
+            <p><a href="#loginmodal" rel="modal:open">About</a>//<a href="http://loginpage.ryanjordal.me">Link</a>//<a href="https://github.com/rayjay00/Login-Page">Github</a></p>            
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="contact">
+      <h1>Links</h1>
+          <p><a href="https://www.github.com/rayjay00">GitHub</a></p>
+          <p><a href="https://codepen.io/rayjay00/">CodePen</a></p>
+          <p><a href="mailto:hello@ryanjordal.me?Subject=Hi%20Ryan" target="_top">Email</a></p>          
+
+    </div><!--contact-->
+  </div><!--main-->
+</body>
+</html>

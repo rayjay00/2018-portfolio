@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i');
+@mixin  flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+@mixin headingfont {
+    font-family: "Libre Baskerville";
+    font-weight: 400i;
+    font-style: italic;
+    font-size: 2em;
+    text-align: center;
+}
+@mixin pfont {
+    font-family: "Libre Baskerville";
+    font-weight: 400;
+    font-size: 1.2em;
+    text-align: center;
+}
+@mixin animate {
+    .hover01  img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    .hover01 figure:hover img {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+}
+// Small tablets and large smartphones (landscape view)
+$screen-sm-max: 480px;
+
+// Small tablets (portrait view)
+$screen-md-max: 768px;
+
+// Tablets and small desktops
+$screen-lg-max: 992px;
+
+// Large tablets and desktops
+$screen-xl-max: 1200px;
+
+// Small devices
+@mixin sm {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (max-width: #{$screen-md-max}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (max-width: #{$screen-lg-max}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (max-width: #{$screen-xl-max}) {
+        @content;
+    }
+ }
+
+body {
+    background-color: rgb(240, 240, 240);
+    .core {
+        @include flex;
+        align-items: center;
+        height: 100vh;
+        @include sm {
+            font-size: 0.8em;
+            text-align: center;
+            width: 100%;
+            height: 100vh;
+        }
+        p {
+            font-family: "Libre Baskerville";
+            font-weight: 400i;
+            font-size: 2em;
+            text-align: center;
+            width: 50%;
+            @include sm {
+                text-align: center;
+                width: 100%;
+                
+            }
+        }
+        span {
+            font-family: "Libre Baskerville";
+            font-weight: 400i;
+            font-style: italic;
+            font-size: 2em;
+            text-align: center;
+        }
+        a {
+            color: rgb(61, 112, 124);
+        }
+    }
+    .projects {
+        h1 {
+        @include headingfont;    
+        }
+        .project-wrap  {
+            @include flex;           
+            .project {
+                margin-bottom: 15px;
+                .modal:open {
+                    display: none;
+                }
+                p {
+                    @include pfont; 
+                    margin: 0;
+                    a{
+                        color: rgb(48, 146, 168);
+                    }
+                }
+                img {
+                    width: 340px;
+                    height: 180px;
+                }
+            }   
+        }
+    }
+    .contact {
+        @include flex;
+        h1 {
+            @include headingfont;
+            text-align: left;
+        }
+        p {
+            list-style-type: none;
+            @include pfont; 
+            display: inline-block;
+            a {
+                color: rgb(49, 115, 129);  
+                text-decoration: none;
+            }         
+        }
+    }
+    
+}
+
+/* Plain CSS */
+@media (max-width: 768px) {
+    .core {
+        display: none;
+    }
+}
